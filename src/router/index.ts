@@ -3,6 +3,7 @@ import HomePage from '@/views/HomePage.vue'
 import HeaderPage from '@/views/HeaderPage.vue'
 import FooterPage from '@/views/FooterPage.vue'
 import SignInPage from '@/views/SignInPage.vue'
+import RegisterPage from '@/views/RegisterPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -11,6 +12,7 @@ const router = createRouter({
     { path: '/header', name: 'HeaderPage', component: HeaderPage },
     { path: '/footer', name: 'FooterPage', component: FooterPage },
     { path: '/sign-in', name: 'SignInPage', component: SignInPage },
+    { path: '/register', name: 'RegisterPage', component: RegisterPage },
   ],
 })
 
