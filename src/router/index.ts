@@ -9,6 +9,7 @@ import TechFeaturesPage from '@/views/TechFeaturesPage.vue'
 import PurchasePage from '@/views/PurchasePage.vue'
 import MyAccountPage from '@/views/MyAccountPage.vue'
 import BasketPage from '@/views/BasketPage.vue'
+import ImageCarousel from '@/components/ImageCarousel.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,6 +24,7 @@ const router = createRouter({
     { path: '/purchase', name: 'PurchasePage', component: PurchasePage },
     { path: '/my-account', name: 'MyAccountPage', component: MyAccountPage },
     { path: '/basket', name: 'BasketPage', component: BasketPage },
+    { path: '/carousel', name: 'ImageCarousel', component: ImageCarousel },
   ],
 })
 
