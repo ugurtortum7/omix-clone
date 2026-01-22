@@ -34,3 +34,27 @@ coverage
 
 # Vitest
 __screenshots__/
+
+.env
+.env.local
+.env.*.local
+
+# Nuxt
+.nuxt
+.output
+.data
+.env
+
+# Build artifacts (TypeScript compiled files)
+*.js
+*.d.ts
+!*.config.js
+!*.config.ts
+!server/**/*.js
+!server/**/*.ts
+
+# Keep specific config files
+!nuxt.config.ts
+!nuxt.config.js
+
+.vscode
