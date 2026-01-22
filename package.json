@@ -3,32 +3,25 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "engines": {
-    "node": "^20.19.0 || >=22.12.0"
-  },
   "scripts": {
-    "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
-    "preview": "vite preview",
-    "build-only": "vite build",
-    "type-check": "vue-tsc --build",
-    "format": "prettier --write src/"
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "api": "tsx server/express.ts",
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "pinia": "^3.0.3",
-    "vue": "^3.5.22",
-    "vue-router": "^4.6.3"
+    "express": "^4.19.2",
+    "firebase": "^12.8.0",
+    "nuxt": "^3.15.1",
+    "vue": "^3.5.22"
   },
   "devDependencies": {
-    "@tsconfig/node22": "^22.0.2",
-    "@types/node": "^22.18.11",
-    "@vitejs/plugin-vue": "^6.0.1",
-    "@vue/tsconfig": "^0.8.1",
-    "npm-run-all2": "^8.0.4",
-    "prettier": "3.6.2",
+    "@pinia/nuxt": "^0.5.5",
+    "pinia": "^2.3.0",
+    "tsx": "^4.19.2",
     "typescript": "~5.9.0",
-    "vite": "^7.1.11",
-    "vite-plugin-vue-devtools": "^8.0.3",
-    "vue-tsc": "^3.1.1"
+    "vue-tsc": "^2.2.12"
   }
 }
